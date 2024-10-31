@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+  /* nav section start*/
+/* Andy Bells CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/*body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}*/
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CUSTOM */
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* nav section ends*/
+
+/* hero section start  */
+
+
+.hero {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/Woman.png');
+    border-radius: 1px;
+ }
+
+ .hero-cont{
+    position: relative;
+    z-index: 1;
+ }
+
+.formm{
+    width: 668px !important;
+    height: 55px !important; 
+    margin: 0 auto !important;
+}
+
+.form-control{
+    border-radius: 44px !important;
+    background-color: white !important;
+}
+
+.form-control::placeholder{
+    text-align: right;
+    color: black !important;
+}
+
+.placeholder::after{
+    content: url('/images/Vector.png');
+}
+
+.hero-content{
+    margin-top: 60px !important;
+}
+
+.empower{
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700 !important;
+    font-family: Poppins;
+    line-height: 85px;
+}
+
+.gear{
+    color: #2FB13E;
+}
+
+.button{
+    margin-top: 40px;
+}
+
+.hero-btn{
+    background-color: #2FB13E;
+    border: none;
+    width: 306px !important;
+    height: 90px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    margin-top: 50px !important;
+    border-radius: 15px !important;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700 !important;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .formm{
+        width: 300px !important;
+        height: 40px !important; 
+        margin: 0 auto !important;
+    }
+
+    .empower{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600 !important;
+        font-family: Poppins;
+        line-height: 60px;
+    }
+
+    .hero-btn{
+        background-color: #2FB13E;
+        border: none;
+        width: 250px !important;
+        height: 80px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+        margin-top: 30px !important;
+        border-radius: 15px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+}
+/* hero section start */
+
+/* flashsales start */
+.flashsales{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: black !important;
+}
+
+.flash{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 4px solid #2FB13E; 
+    border-radius: 15px;
+    font-size: 64px;
+    font-family: Inter;
+    color: white;
+}
+
+.discount{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: auto;
+    color: white;
+}
+
+.flash-img{
+    width: 535px !important;
+    height: 259px !important;
+}
+
+.img{
+    margin-left: 50px !important;
+}
+
+@media screen and (max-width: 768px){
+    .flash{
+        font-size: 40px;
+    }
+
+    .discount{
+        font-size: 25px !important;
+        font-weight: 500;
+        line-height: auto;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .flash-img{
+      margin-top: 15px;
+    }
+}
+/* flashsales end */
+
+/* picture section start */
+.picture-section{
+    padding-top: 100px !important;
+    padding-bottom: 50px  !important;
+}
+
+.equipment{
+    margin-top: 30px;
+    font-family: Inter;
+    font-size: 36px;
+    line-height: auto !important;
+    font-weight: 600 !important;
+}
+@media screen and (max-width: 768px){
+    .picture-section{
+        padding-top: 100px !important;
+        padding-bottom: 50px  !important;
+        text-align: center;
+    }
+    .p-sectn{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .equipment{
+        margin-top: 10px;
+        font-family: Inter;
+        font-size: 30px;
+        line-height: auto !important;
+        font-weight: 600 !important;
+    }
+}
+/* picture-section end */
+
+/* featured section start */
+.featured{
+    margin-top: 30px !important;
+    padding-bottom: 50px;
+}
+
+.featured-head{
+    font-family: Inter;
+    font-size: 36px;
+    line-height: auto;
+    font-weight: 600 !important; ;
+}
+
+.pics-content{
+    margin-top: 35px !important;
+}
+
+.price-tag{
+    margin-top: 30px !important;
+}
+
+.price-description{
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600  !important;
+    line-height: auto;
+}
+
+.pricee{
+    font-family: Inter;
+    font-size: 24px;
+    color: black;
+    font-weight: 800 !important;
+    margin-top: 35px !important;
+}
+
+.price-fade{
+    text-decoration: line-through !important;
+    color: hsl(0, 3%, 70%) !important;
+}
+
+.price-list{
+    margin: 10px;
+}
+
+.pricee-ii{
+    font-family: Inter;
+    font-size: 24px;
+    color: black;
+    font-weight: 800 !important;
+    margin-top: 20px !important; 
+}
+
+.price-percent{
+    display: inline-block;
+   width: 58px;
+   height: 27px;
+   background-color: pink !important;
+   font-size: 12px !important;
+   text-align: center !important;
+   justify-content: center !important;
+   margin-top: 5px;
+   color: red;
+   border-radius: 62px;
+   display: flex;
+   align-items: center !important;
+}
+
+@media screen and (max-width: 768px){
+    .featured{
+        margin-top: 30px !important;
+        padding-bottom: 50px;
+        text-align: center!important;
+    }  
+    .price-tag{
+        margin-top: 10px !important;
+    }
+
+    .pricee{
+        font-family: Inter;
+        font-size: 24px;
+        color: black;
+        font-weight: 800 !important;
+        margin-top: 2px !important;
+    }
+
+    .picc-cont{
+        margin-top: 30px !important;
+    }
+
+    .price-flex{
+       justify-content: center;
+    }
+    .price-fade{
+        text-decoration: line-through !important;
+        color: hsl(0, 3%, 70%) !important;
+    }
+    .price-percent{
+        font-size: 12px !important; 
+        color: red !important;
+        background-color: pink !important;
+    }
+    
+
+}
+/* featured section end */
+
+
+/* footer section start */
+.footer{
+    background: #4EB867;
+    margin-top: 100px !important;
+
+}
+.footer-imagee{
+    width: 40px;
+}
+
+.footer-list{
+    list-style-type: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.footer-list li{
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.52px !important;
+    color: #fff;
+    
+}
+
+
+
+.foot-links{
+    list-style: none;
+}
+
+.list-head{
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    text-align: left;   
+    margin-top: 15px !important; 
+}
+
+.list-word{
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: left; 
+    margin-top: 10px !important;   
+}
+
+.foot-link{
+    text-decoration: none;
+}
+
+
+
+.company-name-ii{
+    font-family: Plus Jakarta Sans;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 40.32px !important;
+    letter-spacing: 0.01em !important;
+    text-align: left !important;
+    color: #184070 !important;
+    display: flex;
+    align-items: center;  
+}
+
+.company-name-ii img{
+    margin-right: 10px;
+}
+
+.footer-navbrand img{
+    color: white;
+}
+
+.footer-icons i{
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.footer-figorate{
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: linear-gradient(90deg, #000000 0%, #184070 76.5%) !important;      
+}
+
+.listtttt{
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    font-family: Open Sans !important;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+}
+
+.footer-linkk{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: center;
+    color: #fff !important;   
+    margin-right: 66px !important; 
+    margin-bottom: 100px !important;
+    cursor: pointer;
+}
+
+.footer-linkk-ii{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: center;
+    color: #fff !important;
+}
+
+
+.footer-imggg{
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-figorate{
+        font-family: Plus Jakarta Sans;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40.32px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: linear-gradient(90deg, #000000 0%, #184070 76.5%) !important;
+        
+    }
+
+    .first-list-word{
+        font-family: Space Grotesk;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        line-height: 26.4px;
+        text-align: left;        
+        color: #fff;   
+    }
+
+    .footer-list li{
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 25.52px;
+        text-align: left;        
+        color: #fff; 
+    }
+
+    .footer-icons{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons i{
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    .company-name-ii{
+        font-family: Plus Jakarta Sans !important;
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        line-height: 30.32px !important;
+        letter-spacing: 0.01em !important;
+        text-align: left !important;
+        color: #184070 !important;
+        display: flex;
+        align-items: center;  
+    }
+
+    .footer-linkk{
+        font-family: Open Sans;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 21.79px;
+        text-align: center;
+        color: #fff !important;   
+        margin-right: 10px !important; 
+        margin-bottom: 0px !important;
+    }
+
+    .footer-linkk-ii{
+        font-family: Open Sans;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 21.79px;
+        text-align: center;
+        color: #fff !important;
+    }
+
+    .text-light small{
+        font-size: 10px !important;
+        text-align: center !important;
+    }
+
+    .footer-imggg{
+        filter: brightness(0) invert(1);
+        width: 24px;
+        font-size: 18px !important;
+    }
+
+    .footer-imggg{
+        filter: brightness(0) invert(1);
+        width: 24px;
+        font-size: 18px !important;
+    }
+
+    .footer-navv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-head{
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 600 !important;
+        line-height: 24.51px;
+        text-align: left;    
+    }
+    
+    .list-word{
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 13px;
+        font-weight: 400 !important;
+        line-height: 21.79px;
+        text-align: left;    
+    }
+}
+/* footer section end */

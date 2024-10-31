@@ -1,0 +1,34 @@
+a {
+    text-decoration: none;
+  }
+  
+  .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .bg-container {
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .bg-container img {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+  }
+  
+  .login-bg-container {
+    height: 560px;
+  }
+  
+  .signup-bg-container {
+    height: 900px;
+  }
+  
+  .reset-bg-container {
+    height: 470px;
+  }
+  

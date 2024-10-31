@@ -1,0 +1,743 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* nav section start*/
+  /* Andy Bells CSS Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /*body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  }*/
+  
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* CUSTOM */
+  .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  /* nav section ends*/
+  /* hero start */
+  .hero {
+    position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100vh;
+    width: 100%;
+    width: 100%;
+    background: linear-gradient(
+        101.48deg,
+        rgba(0, 0, 0, 0.8) 1.33%,
+        rgba(0, 0, 0, 0.48) 99.73%
+      ),
+      url("images/Blog Image (11).png");
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    text-align: center !important;
+    border-radius: 10px;
+  }
+  
+  .hero-head {
+    font-family: Lora;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    color: #fff !important;
+  }
+  
+  .hero-word {
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #fff !important;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-head {
+      font-family: Lora;
+      font-size: 25px;
+      font-weight: 700 !important;
+      line-height: 35px !important;
+      text-align: center;
+      color: #fff !important;
+    }
+  
+    .hero-word {
+      font-family: Lora;
+      font-size: 10px;
+      font-weight: 400 !important;
+      line-height: 15px;
+      text-align: center;
+      color: #fff !important;
+    }
+  }
+  
+  /* hero end */
+  
+  /* essay start */
+  .essay {
+    background: #c4c4c4;
+  }
+  
+  .essay-word-i {
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 700;
+    color: #495057 !important;
+    margin-top: -104% !important;
+  }
+  
+  .essay-line {
+    filter: brightness(0%) contrast(100%) !important;
+  }
+  
+  .essay-word-ii {
+    margin-top: 100px !important;
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400 !important;
+    line-height: 25px;
+    text-align: left;
+    color: #495057;
+  }
+  
+  .essay-word-iii {
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400 !important;
+    line-height: 25px;
+    text-align: left;
+    color: #495057;
+  }
+  
+  .orange-intro {
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 400 !important;
+    line-height: 25px;
+    text-align: left;
+    color: #e8994a;
+  }
+  
+  .nutrition {
+    font-family: Lora;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 25px;
+    text-align: left;
+    color: #e8994a;
+  }
+  
+  .sec-tab {
+    border-bottom: 2px solid black;
+  }
+  
+  /* td:nth-child(2) {
+    border-bottom: 1px solid hsla(0, 5%, 16%, 0.726);
+  } */
+  
+  .esssay-btn-one {
+    width: Hug (77px) px;
+    height: Hug (22px) px;
+    /* top: 1363px;
+    left: 290px; */
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #e5e5e5;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11.72px;
+    text-align: center;
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  .esssay-btn-two {
+    width: Hug (53px) px;
+    height: Hug (22px) px;
+    /* top: 1363px;
+    left: 380px; */
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11.72px;
+    text-align: left;
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  .button-cont {
+    display: flex;
+  }
+  
+  .bbt {
+    margin: 10px !important;
+  }
+  
+  .nameee {
+    margin: 13px;
+  }
+  
+  .david {
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .name-word {
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 18px;
+  }
+  
+  .name-icon {
+    justify-content: space-between !important;
+    padding-bottom: 50px !important;
+  }
+  
+  .icon-img {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 5px !important;
+  }
+  
+  .icons {
+    margin-top: 50px !important;
+  }
+  
+  .name {
+    margin-top: 30px !important;
+  }
+  
+  .table-content {
+    background-color: #c4c4c4;
+  }
+  
+  @media (max-width: 768px) {
+    .essay-word-i {
+      font-family: Lora;
+      font-size: 9px !important;
+      font-weight: 700;
+      color: #495057 !important;
+      margin-top: -1200% !important;
+    }
+  
+    .essay-line {
+      width: 10px !important;
+    }
+  
+    .orange-intro {
+      font-family: Lora;
+      font-size: 16px;
+      font-weight: 400 !important;
+      line-height: 25px;
+      text-align: left;
+      color: #e8994a;
+    }
+  
+    .essay-word-ii {
+      margin-top: 100px !important;
+      font-family: Lora;
+      font-size: 9px;
+      font-weight: 400 !important;
+      line-height: 25px;
+      text-align: left;
+      color: #495057;
+    }
+  
+    .nutrition {
+      font-family: Lora;
+      font-size: 12px;
+      font-weight: 400 !important;
+      line-height: 25px;
+      text-align: left;
+      color: #e8994a;
+    }
+  
+    .essay-word-iii {
+      font-family: Lora;
+      font-size: 9px !important;
+      font-weight: 400 !important;
+      line-height: 25px;
+      text-align: left;
+      color: #495057;
+    }
+  
+    .name-imgg {
+      width: 35px !important;
+      height: 35px !important;
+    }
+  
+    .nameee {
+      margin: 5px !important;
+    }
+  
+    .name-word {
+      font-family: Lora;
+      font-size: 8px !important;
+      font-weight: 400 !important;
+      line-height: 20px;
+      text-align: left;
+      margin-top: 3px !important;
+    }
+  
+    .icon-img {
+      width: 15px !important;
+      height: 15px !important;
+      margin: 3px !important;
+    }
+  
+    .david {
+      font-family: Lora;
+      font-size: 9px !important;
+      font-weight: 700 !important;
+      line-height: 20px;
+      text-align: left;
+    }
+  
+    .name {
+      margin-top: 40px !important;
+    }
+  }
+  /* essay end */
+  
+  /* related start */
+  .related {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    background: #e5e5e5;
+  }
+  
+  .related-head {
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    color: #495057;
+  }
+  
+  .img-containerr {
+    position: relative;
+  }
+  
+  .img-containerr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 12% !important;
+    left: 5% !important;
+    color: #fff;
+  }
+  
+  .related-date {
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 400 !important;
+    line-height: 15.36px;
+    text-align: left;
+    color: #e5e5e5;
+  }
+  
+  .related-gain {
+    font-family: Lora;
+    font-size: 16px;
+    font-weight: 700 !important;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .related-routine {
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 400 !important;
+    line-height: 20px;
+    text-align: left;
+    color: #e5e5e5;
+  }
+  
+  .picture-card-row {
+    margin-top: 50px !important;
+  }
+  
+  @media (max-width: 768px) {
+    .related {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .related-head {
+      font-family: Lora;
+      font-size: 17px;
+      font-weight: 700 !important;
+      line-height: 46.08px;
+      text-align: left;
+      color: #495057;
+    }
+  
+    .picture-card-row {
+      margin-top: 10px !important;
+    }
+  
+    .related-date {
+      font-family: Lora;
+      font-size: 10px !important;
+      font-weight: 400 !important;
+      line-height: 15.36px;
+      text-align: left;
+      color: #e5e5e5;
+    }
+  
+    .related-gain {
+      font-family: Lora;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      line-height: 25px;
+      text-align: left;
+      color: #fff;
+    }
+  
+    .related-routine {
+      font-family: Lora;
+      font-size: 10px;
+      font-weight: 400 !important;
+      line-height: 20px;
+      text-align: left;
+      color: #e5e5e5;
+    }
+  }
+  /* related end */
+  
+  /* footer section start */
+  .footer {
+    background: #4eb867;
+    margin-top: 100px !important;
+  }
+  .footer-imagee {
+    width: 40px;
+  }
+  
+  .footer-list {
+    list-style-type: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  .footer-list li {
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.52px !important;
+    color: #fff;
+  }
+  
+  .foot-links {
+    list-style: none;
+  }
+  
+  .list-head {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    text-align: left;
+    margin-top: 15px !important;
+  }
+  
+  .list-word {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: left;
+    margin-top: 10px !important;
+  }
+  
+  .foot-link {
+    text-decoration: none;
+  }
+  
+  .company-name-ii {
+    font-family: Plus Jakarta Sans;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 40.32px !important;
+    letter-spacing: 0.01em !important;
+    text-align: left !important;
+    color: #184070 !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-name-ii img {
+    margin-right: 10px;
+  }
+  
+  .footer-navbrand img {
+    color: white;
+  }
+  
+  .footer-icons i {
+    margin: 0 10px;
+    font-size: 22px;
+  }
+  
+  .footer-figorate {
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: linear-gradient(90deg, #000000 0%, #184070 76.5%) !important;
+  }
+  
+  .listtttt {
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    font-family: Open Sans !important;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+  }
+  
+  .footer-linkk {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: center;
+    color: #fff !important;
+    margin-right: 66px !important;
+    margin-bottom: 100px !important;
+    cursor: pointer;
+  }
+  
+  .footer-linkk-ii {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: center;
+    color: #fff !important;
+  }
+  
+  .footer-imggg {
+    filter: brightness(0) invert(1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-figorate {
+      font-family: Plus Jakarta Sans;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 40.32px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      color: linear-gradient(90deg, #000000 0%, #184070 76.5%) !important;
+    }
+  
+    .first-list-word {
+      font-family: Space Grotesk;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      line-height: 26.4px;
+      text-align: left;
+      color: #fff;
+    }
+  
+    .footer-list li {
+      font-family: Space Grotesk;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 25.52px;
+      text-align: left;
+      color: #fff;
+    }
+  
+    .footer-icons {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer-icons i {
+      margin: 0 20px;
+      font-size: 16px;
+    }
+  
+    .company-name-ii {
+      font-family: Plus Jakarta Sans !important;
+      font-size: 22px !important;
+      font-weight: 600 !important;
+      line-height: 30.32px !important;
+      letter-spacing: 0.01em !important;
+      text-align: left !important;
+      color: #184070 !important;
+      display: flex;
+      align-items: center;
+    }
+  
+    .footer-linkk {
+      font-family: Open Sans;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      line-height: 21.79px;
+      text-align: center;
+      color: #fff !important;
+      margin-right: 10px !important;
+      margin-bottom: 0px !important;
+    }
+  
+    .footer-linkk-ii {
+      font-family: Open Sans;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      line-height: 21.79px;
+      text-align: center;
+      color: #fff !important;
+    }
+  
+    .text-light small {
+      font-size: 10px !important;
+      text-align: center !important;
+    }
+  
+    .footer-imggg {
+      filter: brightness(0) invert(1);
+      width: 24px;
+      font-size: 18px !important;
+    }
+  
+    .footer-imggg {
+      filter: brightness(0) invert(1);
+      width: 24px;
+      font-size: 18px !important;
+    }
+  
+    .footer-navv {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .list-head {
+      color: #fff;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 600 !important;
+      line-height: 24.51px;
+      text-align: left;
+    }
+  
+    .list-word {
+      color: #fff;
+      font-family: Open Sans;
+      font-size: 13px;
+      font-weight: 400 !important;
+      line-height: 21.79px;
+      text-align: left;
+    }
+  }
+  /* footer section end */
+  

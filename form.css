@@ -1,0 +1,703 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    overflow-x: hidden;
+}
+
+/* nav section start*/
+/* Andy Bells CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/*body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}*/
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CUSTOM */
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* nav section ends*/
+/* hero start */
+.hero{
+    position: relative;            
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100vh;
+    width: 100%;
+    width: 100%;
+    background: linear-gradient(101.48deg, rgba(0, 0, 0, 0.8) 1.33%, rgba(0, 0, 0, 0.48) 99.73%),url("images/image 130.png");
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    text-align: center !important;
+    border-radius: 10px;
+}
+
+.hero-head{
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46.08px;
+    text-align: center !important;
+    color: #fff;    
+}
+
+.hero-word{
+    font-family: Lora;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center !important;
+    color: #fff;  
+    margin-top: -10px !important;  
+}
+
+/* styling the form */
+.inputt{
+    border: none;
+    padding: 5px 10px;
+    line-height: 30px;
+    display: block;
+    width: 853px !important;
+    height: 99px !important;
+    border-radius: 19px !important;
+    outline: 0;
+}
+
+.form-input{
+    position: relative !important;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0; 
+}
+
+.icon{
+    position: absolute !important;
+    left: 19% !important;  
+    top: 5% !important;
+    font-size: 25px;
+    color: #4b00ff;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-inner-btn{
+    position: absolute;
+    width: Hug (83px)px;
+    height: Hug (33px)px;
+    top: 29% !important;
+    left: 19% !important;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: #00000026;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700 !important;
+    line-height: 23.44px;
+    text-align: right;
+    color: #fff;
+    text-decoration: none;    
+}  
+
+
+.form-one input {
+    text-indent: 14% !important; /* Ensure the input text starts from the same position */
+}
+
+@media (max-width : 768px) {
+    .hero-head{
+        font-family: Lora;
+        font-size: 20px !important;
+        font-weight: 700;
+        line-height: 46.08px;
+        text-align: center !important;
+        color: #fff;    
+    }
+
+    .form-input{
+        position: relative !important;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0; 
+    }
+
+    .inputt{
+        border: none;
+        padding: 5px 10px;
+        line-height: 25px;
+        display: block;
+        width: 853px !important;
+        height: 60px !important;
+        border-radius: 19px !important;
+        outline: 0;
+    }
+
+    .form-inner-btn{
+        position: absolute;
+        width: Hug (63px)px;
+        height: Hug (23px)px;
+        top: 19% !important;
+        left: 50% !important;
+        padding: 5px 10px 5px 10px;
+        gap: 10px;
+        border-radius: 8px;
+        opacity: 0px;
+        background: #00000026;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 700 !important;
+        line-height: 23.44px;
+        text-align: right;
+        color: #fff;
+        text-decoration: none;    
+    }
+
+    .icon{
+        position: absolute !important;
+        left: 5% !important;  
+        top: 5% !important;
+        font-size: 20px;
+        color: #4b00ff;
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-one input {
+        text-indent: 32% !important; /* Ensure the input text starts from the same position */
+    }
+
+    .hero-word{
+        font-family: Lora;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        line-height: 32px;
+        text-align: center !important;
+        color: #fff;  
+        margin-top: -10px !important;  
+    }
+}
+
+/* hero stop */
+
+/* form detail start */
+.form-detail{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+    border: 1px solid #00000080 !important;
+}
+
+.email-head{
+    font-family: Lora;
+    font-size: 25px;
+    font-weight: 500 !important;
+    line-height: 32px;
+    text-align: left !important;
+    color: #000000;    
+}
+
+.email-box{
+  height: 81px ;
+  border-radius: 10px !important;
+  margin-top: 10px;
+  border: 1px solid #00000080 !important;
+}
+
+.form-email{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.email-box::placeholder{
+    text-indent: 10px;
+}
+
+.form-text{
+    font-family: Lora;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 23.04px;
+    text-align: left;
+    color: #00000080 !important;
+    margin-top: 25px !important;
+    margin-left: 100px  !important;
+}
+
+.form-textarea{
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 70px;
+}
+
+.textarea-box{
+    height: 394px;
+    border-radius: 10px;
+    border: 1px solid #00000080 !important;
+    margin-top: 10px;
+}
+
+.textarea-box::placeholder{
+    text-indent: 10px;
+}
+
+.basic{
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: 400 !important;
+    line-height: 25.6px;
+    text-align: left;
+    color: black !important;    
+}
+
+.basic-info-text{
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 400 !important;
+    line-height: 23.04px;
+    text-align: left;
+    color: #00000080;
+    margin-top: 70px;
+}
+
+
+
+.form-button-container{
+  margin-top: 120px !important;
+  margin-left: 170px;
+  position: relative;
+  margin-bottom: -50px;
+}
+
+.form-btnn{
+    padding: 20px 170px;
+    top: 2015px;
+    left: 387px;
+    gap: 0px;
+    border-radius: 12px ;
+    opacity: 0px;
+    background: #419956;
+    color: #fff;
+    font-family: Lora;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+@media(max-width:768px) {
+    .form-detail{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .email-head{
+        font-family: Lora;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        line-height: 32px;
+        text-align: left !important;
+        color: #000000;    
+    }
+    
+    .email-box{
+      height: 41px ;
+      border-radius: 10px !important;
+      margin-top: 5px !important;
+      border: 1px solid #00000080 !important;
+    }
+
+    .form-text{
+        font-family: Lora;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        line-height: 23.04px;
+        text-align: left;
+        color: #00000080 !important;
+        margin-top: 25px !important;
+        margin-left: 0 !important;
+    }
+
+    .textarea-box{
+        height: 200px !important;
+        border-radius: 10px;
+        border: 1px solid #00000080 !important;
+        margin-top: 10px;
+    }
+
+    .basic{
+        font-family: Lora;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 25.6px;
+        text-align: left;
+        color: black !important;    
+    }
+
+    .basic-info-text{
+        font-family: Lora;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 23.04px;
+        text-align: left;
+        color: #00000080;
+        margin-top: 70px;
+    }
+
+    .form-button-container{
+        margin-top: 40px !important;
+        margin-left: 0px !important;
+        position: relative;
+        margin-bottom: -100px;
+    }
+    .form-btnn{
+        padding: 14px 30px;
+        top: 2015px;
+        left: 387px;
+        gap: 0px;
+        border-radius: 12px ;
+        opacity: 0px;
+        background: #419956;
+        color: #fff;
+        font-family: Lora;
+        font-size: 22px !important;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+}
+
+/* form detail end */
+
+/* footer section start */
+.footer{
+    background: #4EB867;
+    margin-top: 100px !important;
+
+}
+.footer-imagee{
+    width: 40px;
+}
+
+.footer-list{
+    list-style-type: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.footer-list li{
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.52px !important;
+    color: #fff;
+    
+}
+
+
+
+.foot-links{
+    list-style: none;
+}
+
+.list-head{
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    text-align: left;   
+    margin-top: 15px !important; 
+}
+
+.list-word{
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: left; 
+    margin-top: 10px !important;   
+}
+
+.foot-link{
+    text-decoration: none;
+}
+
+
+
+.company-name-ii{
+    font-family: Plus Jakarta Sans;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 40.32px !important;
+    letter-spacing: 0.01em !important;
+    text-align: left !important;
+    color: #184070 !important;
+    display: flex;
+    align-items: center;  
+}
+
+.company-name-ii img{
+    margin-right: 10px;
+}
+
+.footer-navbrand img{
+    color: white;
+}
+
+.footer-icons i{
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.footer-figorate{
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: linear-gradient(90deg, #000000 0%, #184070 76.5%) !important;      
+}
+
+.listtttt{
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    font-family: Open Sans !important;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+}
+
+.footer-linkk{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: center;
+    color: #fff !important;   
+    margin-right: 66px !important; 
+    margin-bottom: 100px !important;
+    cursor: pointer;
+}
+
+.footer-linkk-ii{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 21.79px;
+    text-align: center;
+    color: #fff !important;
+}
+
+
+.footer-imggg{
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-figorate{
+        font-family: Plus Jakarta Sans;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40.32px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: linear-gradient(90deg, #000000 0%, #184070 76.5%) !important;
+        
+    }
+
+    .first-list-word{
+        font-family: Space Grotesk;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        line-height: 26.4px;
+        text-align: left;        
+        color: #fff;   
+    }
+
+    .footer-list li{
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 25.52px;
+        text-align: left;        
+        color: #fff; 
+    }
+
+    .footer-icons{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons i{
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    .company-name-ii{
+        font-family: Plus Jakarta Sans !important;
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        line-height: 30.32px !important;
+        letter-spacing: 0.01em !important;
+        text-align: left !important;
+        color: #184070 !important;
+        display: flex;
+        align-items: center;  
+    }
+
+    .footer-linkk{
+        font-family: Open Sans;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 21.79px;
+        text-align: center;
+        color: #fff !important;   
+        margin-right: 10px !important; 
+        margin-bottom: 0px !important;
+    }
+
+    .footer-linkk-ii{
+        font-family: Open Sans;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 21.79px;
+        text-align: center;
+        color: #fff !important;
+    }
+
+    .text-light small{
+        font-size: 10px !important;
+        text-align: center !important;
+    }
+
+    .footer-imggg{
+        filter: brightness(0) invert(1);
+        width: 24px;
+        font-size: 18px !important;
+    }
+
+    .footer-imggg{
+        filter: brightness(0) invert(1);
+        width: 24px;
+        font-size: 18px !important;
+    }
+
+    .footer-navv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-head{
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 600 !important;
+        line-height: 24.51px;
+        text-align: left;    
+    }
+    
+    .list-word{
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 13px;
+        font-weight: 400 !important;
+        line-height: 21.79px;
+        text-align: left;    
+    }
+}
+/* footer section end */
